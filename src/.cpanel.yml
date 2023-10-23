@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cpanelUser/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/username/public_html/
+    - /bin/cp -R /home/rase7944/repositories/3dModel/src $DEPLOYPATH
