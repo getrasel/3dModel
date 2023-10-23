@@ -1,4 +1,5 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/username/public_html/
-    - /bin/cp -R /home/rase7944/repositories/3dModel/src $DEPLOYPATH
+    - export DEPLOYPATH=/home/rase7944/public_html/
+    - /bin/cp * $DEPLOYPATH
