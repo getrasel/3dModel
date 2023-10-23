@@ -1,7 +1,4 @@
 deployment:
   tasks:
-    - setup: |
-        echo "Deployment started."
-    - publish: |
-        echo "Deployment completed."
-
+    - export DEPLOYPATH=/home/cpanelUser/public_html/
+    - /bin/cp -R * $DEPLOYPATH
