@@ -1,5 +1,19 @@
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home/rase7944/threejsblender
+#     - /bin/cp * $DEPLOYPATH
+
+
+  
 ---
 deployment:
-  tasks:
-    - export DEPLOYPATH=/home/rase7944/threejsblender
-    - /bin/cp * $DEPLOYPATH
+      tasks:
+        - export DEPLOYPATH=/home/rase7944/public_html  # Add /<app_folder> if required
+        - /bin/cp <file_name> $DEPLOYPATH                 #Copy specific file to destination from root
+        - /bin/cp /threejsblender/<file_name> $DEPLOYPATH   #copy specific file from source sub folder
+        - /bin cp * $DEPLOYPATH                           #copy all from root 
+        - /bin cp /src/* $DEPLOYPATH             #copy all from sub folder root
+        - /bin/cp -r * $DEPLOYPATH                        #copy all recursively to $DEPLOYPATH
+        
+        
